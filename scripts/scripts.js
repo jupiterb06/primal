@@ -47,3 +47,4 @@
       $("#backToStart").click(function(e){
         location.reload();
  });
+ 
