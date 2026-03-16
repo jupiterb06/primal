@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>the primal deck</title>
+    <link rel="stylesheet" href="styles/site.css"> 
+
+  </head>
+  <body>
+    <header>
+        <h1>
+            the primal deck
+        </h1>
+    </header>
+    <main>
+    <section id = "start">
+        <img src = ""> 
+        <button id = "shuffleButton">SHUFFLE</button>
+        <!-- when this button is clicked, it will take the viewer to the next page, where the shuffle animation loops -->
+    </section>
+
+    <section id = "shuffling" class="hidden">
+        <img src = "">
+        <button id = "stopShuffle">STOP</button>
+        <!-- when this button is clicked, it will take the viewer to the next page, which explains the reading -->
+    </section>
+
+    <section id = "beginReading" class="hidden">
+        <button id = "begin">BEGIN?</button>
+        <!-- when this button is clicked, it takes the viewer to the next section -->
+    </section>
+
+    <section id = "past" class="hidden">
+        <h2>I. THE PAST</h2>
+        <button id="goToPastCard"> > </button>
+    </section>
+
+    <section id = "pastCard" class="hidden">
+        <h3 id="pastCardName"></h3>
+        <!-- card name -->
+        <img src = ""> 
+        <!-- video for past card -->
+         <button id="goToPresent">next</button>
+    </section>
+
+        <section id = "present" class="hidden">
+        <h2>II. THE PRESENT</h2>
+        <button id="goToPresentCard"> > </button>
+    </section>
+
+        <section id = "presentCard" class="hidden">
+        <h3 id="presentCardName"></h3>
+        <!-- card name -->
+        <img src = ""> 
+        <!-- video for present card -->
+         <button id="goToFuture">next</button>
+    </section>
+
+            <section id = "future" class="hidden" >
+        <h2>III. THE FUTURE</h2>
+        <button id="goToFutureCard"> > </button>
+    </section>
+
+           <section id = "futureCard" class="hidden">
+        <h3 id="futureCardName"></h3>
+        <!-- card name -->
+        <img src = ""> 
+        <!-- video for present card -->
+         <button id="goToRecap">next</button>
+    </section>
+
+    <section id = "recap" class="hidden">
+        <div id = "cardContainer">
+            <div id = "pastRecap">
+                <img src = ""> 
+                <!-- the corresponding video w/ controls -->
+                 <p>trait1</p>
+                 <p>trait2</p>
+                 <p>trait3</p>
+            </div>
+
+            <div id = "presentRecap">
+                <img src = ""> 
+                <!-- the corresponding video w/ controls -->
+                 <p>trait1</p>
+                 <p>trait2</p>
+                 <p>trait3</p>
+            </div>
+
+            <div id = "futureRecap">
+                <img src = ""> 
+                <!-- the corresponding video w/ controls -->
+                 <p>trait1</p>
+                 <p>trait2</p>
+                 <p>trait3</p>
+            </div>
+        </div>
+        <button id = "backToStart">back to start</button>
+    </section>
+
+
+
+    </main>
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+  </body>
+</html>
